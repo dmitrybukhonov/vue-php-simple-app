@@ -23,7 +23,7 @@
 
 <script>
 import axios from 'axios';
-
+console.log('process.env.VUE_APP_API_URL', process.env.VUE_APP_API_URL);
 export default {
   data () {
     return {
@@ -37,7 +37,7 @@ export default {
   methods: {
     async submitForm () {
       try {
-        const response = await axios.post('http://localhost:8090/backend/api.php', {
+        const response = await axios.post(process.env.VUE_APP_API_URL, {
           firstName: this.firstName,
           lastName: this.lastName,
           email: this.email

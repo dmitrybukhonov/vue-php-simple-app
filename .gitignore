@@ -1,12 +1,13 @@
 .DS_Store
-node_modules
-/dist
-/backend/config/db.php
+/frontend/node_modules
+/frontend/dist
+/backend/config.php
 
 
 # local env files
-.env.local
-.env.*.local
+/frontend/.env
+/frontend/.env.local
+/frontend/.env.*.local
 
 # Log files
 npm-debug.log*

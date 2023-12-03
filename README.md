@@ -4,9 +4,8 @@
 ## Развертывание приложения
 1. Перейдите в каталог проекта:
 2. Скопируйте .env и задайте базовые параметры:
-
    ```bash
-    cp backend/config/db.php-example backend/config/db.php
+    cp backend/config.php backend/config.php
    ```
 3. Запустите скрипт deploy.sh. Этот скрипт выполняет следующие действия:
 

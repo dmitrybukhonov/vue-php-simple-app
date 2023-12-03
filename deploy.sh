@@ -13,7 +13,7 @@ fi
 
 
 echo "Installing dependencies..."
-npm install
+cd frontend && npm install && npm run build
 
 echo "Starting Vue.js server..."
 npm run serve &
@@ -21,4 +21,4 @@ npm run serve &
 sleep 5
 
 echo "Starting PHP server..."
-php -S localhost:8090
+cd .. && php -S localhost:8090

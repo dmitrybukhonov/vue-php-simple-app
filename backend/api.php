@@ -1,13 +1,14 @@
 <?php
 
 require_once 'helpers/function.php';
-require_once 'config/db.php';
+require_once 'config.php';
 
 header('Content-Type: application/json');
 header('Access-Control-Allow-Origin: *');
 header('Access-Control-Allow-Methods: POST');
 
 try {
+    $databaseConfig = $config['db'];
     $pdo = new PDO(
         $databaseConfig['dsn'],
         $databaseConfig['username'],
