@@ -5,7 +5,7 @@
 1. Перейдите в каталог проекта:
 2. Скопируйте .env и задайте базовые параметры:
    ```bash
-    cp backend/config.php backend/config.php
+    cp backend/config.php.example backend/config.php
    ```
 3. Запустите скрипт deploy.sh. Этот скрипт выполняет следующие действия:
 
